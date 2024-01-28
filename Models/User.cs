@@ -10,6 +10,10 @@ namespace DataNex.Model.Models
     [Table("datanex_users")]
     public class User
     {
+        public User()
+        {
+            Id = Guid.NewGuid();    
+        }
         public virtual Guid Id { get; set; }
 
         public virtual string Name { get; set; }
