@@ -39,6 +39,8 @@ namespace DataNex.Model.Models
 
         public virtual string? TaxOffice { get; set; }
 
+        public virtual ICollection<Document> Documnents { get; set; } = new HashSet<Document>();
+
 
     }
 
