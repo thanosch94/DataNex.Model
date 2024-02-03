@@ -13,40 +13,26 @@ namespace DataNex.Model.Dtos
         public string Name { get; set; }
 
 
-        //Billing
-        public string? BAddress { get; set; }
+        public string? Address { get; set; }
 
-        public string? BRegion { get; set; }
+        public string? Region { get; set; }
 
-        public string? BPostalCode { get; set; }
+        public string? PostalCode { get; set; }
 
-        public string? BCity { get; set; }
+        public string? City { get; set; }
 
-        public string? BCountry { get; set; }
+        public string? Country { get; set; }
 
-        public int? BPhone1 { get; set; }
+        public long? Phone1 { get; set; }
 
-        public int? BPhone2 { get; set; }
+        public long? Phone2 { get; set; }
 
-        public string? BEmail { get; set; }
+        public string? Email { get; set; }
 
 
-        //Shipping
-        public string? SAddress { get; set; }
+        public int? VatNumber { get; set; } 
 
-        public string? SRegion { get; set; }
-
-        public string? SPostalCode { get; set; }
-
-        public string? SCity { get; set; }
-
-        public string? SCountry { get; set; }
-
-        public int? SPhone1 { get; set; }
-
-        public int? SPhone2 { get; set; }
-
-        public string? SEmail { get; set; }
+        public string? TaxOffice { get; set; }
 
     }
 }

@@ -19,40 +19,25 @@ namespace DataNex.Model.Models
         public virtual string Name { get; set; }
 
 
-        //Billing
-        public virtual string? BAddress { get; set; }
+        public virtual string? Address { get; set; }
 
-        public virtual string? BRegion { get; set; }
+        public virtual string? Region { get; set; }
 
-        public virtual string? BPostalCode { get; set; }
+        public virtual string? PostalCode { get; set; }
 
-        public virtual string? BCity { get; set; }
+        public virtual string? City { get; set; }
 
-        public virtual string? BCountry { get; set; }
+        public virtual string? Country { get; set; }
 
-        public virtual int? BPhone1 { get; set; }
+        public virtual long? Phone1 { get; set; }
 
-        public virtual int? BPhone2 { get; set; }
+        public virtual long? Phone2 { get; set; }
 
-        public virtual string? BEmail { get; set;}
+        public virtual string? Email { get; set;}
 
+        public virtual int? VatNumber { get; set; }
 
-        //Shipping
-        public virtual string? SAddress { get; set; }
-
-        public virtual string? SRegion { get; set; }
-
-        public virtual string? SPostalCode { get; set; }
-
-        public virtual string? SCity { get; set; }
-
-        public virtual string? SCountry { get; set; }
-
-        public virtual int? SPhone1 { get; set; }
-
-        public virtual int? SPhone2 { get; set; }
-
-        public virtual string? SEmail { get; set; }
+        public virtual string? TaxOffice { get; set; }
 
 
     }
