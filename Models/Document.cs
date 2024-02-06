@@ -59,5 +59,7 @@ namespace DataNex.Model.Models
         [StringLength(255)]
         public virtual string? ShippingEmail { get; set; }
 
+        public virtual ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
+
     }
 }

@@ -37,6 +37,7 @@ namespace DataNex.Model.Models
 
         public virtual Brand? Brand { get; set; }
 
+        public virtual ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
 
 
     }
