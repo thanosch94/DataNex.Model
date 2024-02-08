@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,12 @@ namespace DataNex.Model.Models
 
         public virtual Guid Id { get; set; }
 
+        [StringLength(50)]
         public virtual string Name { get; set; }
+
+        [StringLength(50)]
+        public virtual string? Description { get; set; }
+
 
         public virtual ICollection<Document> Documnents { get; set; } = new HashSet<Document>();
 
