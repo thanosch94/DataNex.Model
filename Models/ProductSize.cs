@@ -24,5 +24,7 @@ namespace DataNex.Model.Models
         [StringLength(10)]
         public virtual string? Abbreviation { get; set; }
 
+        public virtual ICollection<ProductBarcode> ProductBarcodes { get; set; } = new HashSet<ProductBarcode>();
+
     }
 }
