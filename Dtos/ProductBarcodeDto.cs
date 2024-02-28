@@ -15,6 +15,9 @@ namespace DataNex.Model.Dtos
 
         public Guid? SizeId { get; set; }
 
-        public long? Barcode { get; set; }
+        public string? Barcode { get; set; }
+        public string? SizeName { get; set; }
+
+        public bool? IsEditable { get; set; }
     }
 }

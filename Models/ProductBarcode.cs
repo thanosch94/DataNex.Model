@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,8 @@ namespace DataNex.Model.Models
 
         public virtual ProductSize? Size { get; set;}
 
-        public virtual long? Barcode {  get; set; }
+        [StringLength(255)]
+        public virtual string? Barcode {  get; set; }
 
 
     }
