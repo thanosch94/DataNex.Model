@@ -14,12 +14,17 @@ namespace DataNex.Model.Dtos
         public DateTimeOffset DocumentDateTime { get; set; }
 
         public Guid DocumentTypeId { get; set; }
+        public string DocumentTypeName { get; set; }
 
         public int DocumentNumber { get; set; }
 
         public Guid? DocumentStatusId { get; set; }
 
         public Guid CustomerId { get; set; }
+
+        public string CustomerName { get; set; }
+
+        public long? CustomerPhone1 { get; set; }
 
         public decimal? DocumentTotal { get; set; }
 
