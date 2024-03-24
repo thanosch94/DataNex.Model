@@ -60,6 +60,17 @@ namespace DataNex.Model.Models
         public virtual string? ShippingEmail { get; set; }
 
         public virtual ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
-
+        public virtual string? UserText1 { get; set; }
+        public virtual string? UserText2 { get; set; }
+        public virtual string? UserText3 { get; set; }
+        public virtual string? UserText4 { get; set; }
+        public virtual long? UserNumber1 { get; set; }
+        public virtual long? UserNumber2 { get; set; }
+        public virtual long? UserNumber3 { get; set; }
+        public virtual long? UserNumber4 { get; set; }
+        public virtual DateTime? UserDate1 { get; set; }
+        public virtual DateTime? UserDate2 { get; set; }
+        public virtual DateTime? UserDate3 { get; set; }
+        public virtual DateTime? UserDate4 { get; set; }
     }
 }
