@@ -19,6 +19,7 @@ namespace DataNex.Model.Dtos
         public int DocumentNumber { get; set; }
 
         public Guid? DocumentStatusId { get; set; }
+        public string? DocumentStatusName { get; set; }
 
         public Guid CustomerId { get; set; }
 
