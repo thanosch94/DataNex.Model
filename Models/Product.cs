@@ -27,7 +27,8 @@ namespace DataNex.Model.Models
 
         public virtual string? Description { get; set; }
 
-        public virtual byte[]? Image { get; set; }
+        public virtual string? ImagePath { get; set; } 
+
 
         [Precision(18,2)]
         public virtual decimal? Price { get; set; }
