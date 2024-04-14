@@ -15,7 +15,7 @@ namespace DataNex.Model.Dtos
 
         public Guid ProductId { get; set; }
 
-        public int ProductQuantity { get; set; }
+        public int Quantity { get; set; }
 
         public Guid? ProductSizeId { get; set; }
 
@@ -28,7 +28,7 @@ namespace DataNex.Model.Dtos
         public string SizeName { get; set; }
         public string Barcode { get; set; }
         public decimal Price { get; set; }
-        public decimal RowTotal { get; set; }
+        public decimal TotalPrice { get; set; }
         public bool IsRowFilled { get; set; }
 
 

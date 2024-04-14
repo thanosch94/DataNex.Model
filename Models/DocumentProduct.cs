@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -26,7 +27,14 @@ namespace DataNex.Model.Models
 
         public virtual Product Product { get; set;}
 
-        public virtual int ProductQuantity { get; set;}
+        [Precision(18,2)]
+        public virtual decimal Price { get; set; }
+
+
+        public virtual int Quantity { get; set;}
+
+        [Precision(18, 2)]
+        public virtual decimal TotalPrice { get; set; }
 
         public virtual Guid? ProductSizeId { get; set;}
 
