@@ -30,7 +30,9 @@ namespace DataNex.Model.Dtos
         public decimal Price { get; set; }
         public decimal TotalPrice { get; set; }
         public bool IsRowFilled { get; set; }
-
-
+        public string DocumentCode { get; set; }
+        public string CustomerName { get; set; }
+        public string DocumentDateString { get; set; }
+        public DateTimeOffset DocumentDate { get; set; }
     }
 }
