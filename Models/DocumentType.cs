@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DataNex.Model.Models
 {
     [Table("datanex_documenttypes")]
-    public class DocumentType
+    public class DocumentType:BaseModel
     {
 
         public DocumentType()

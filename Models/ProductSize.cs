@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DataNex.Model.Models
 {
     [Table("datanex_product_sizes")]
-    public class ProductSize
+    public class ProductSize:BaseModel
     {
         public ProductSize()
         {

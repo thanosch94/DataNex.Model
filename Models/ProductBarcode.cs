@@ -10,7 +10,7 @@ namespace DataNex.Model.Models
 {
 
     [Table("datanex_product_barcodes")]
-    public class ProductBarcode
+    public class ProductBarcode:BaseModel
     {
         public ProductBarcode()
         {

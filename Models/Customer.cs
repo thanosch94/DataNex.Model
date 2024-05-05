@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DataNex.Model.Models
 {
     [Table("datanex_customers")]
-    public class Customer
+    public class Customer:BaseModel
     {
         public Customer()
         {

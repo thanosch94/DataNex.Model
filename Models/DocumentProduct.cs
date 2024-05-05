@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DataNex.Model.Models
 {
     [Table("datanex_documentproducts")]
-    public class DocumentProduct
+    public class DocumentProduct:BaseModel
     {
 
         public DocumentProduct()

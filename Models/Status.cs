@@ -10,7 +10,7 @@ namespace DataNex.Model.Models
 {
     [Table("datanex_statuses")]
 
-    public class Status
+    public class Status:BaseModel
     {
         public Status()
         {

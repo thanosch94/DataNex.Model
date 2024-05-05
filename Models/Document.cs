@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 namespace DataNex.Model.Models
 {
     [Table("datanex_documents")]
-    public class Document
+    public class Document:BaseModel
     {
         public Document()
         {
