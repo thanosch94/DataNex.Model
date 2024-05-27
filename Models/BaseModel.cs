@@ -14,7 +14,7 @@ namespace DataNex.Model.Models
 
         public virtual DateTime DateAdded { get; set; } = DateTime.Now;
 
-        public virtual Guid UserAdded { get; set; } 
+        public virtual Guid? UserAdded { get; set; } 
 
         public virtual DateTime? DateUpdated { get; set;}
 

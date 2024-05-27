@@ -21,7 +21,7 @@ namespace DataNex.Model.Models
 
         public LogTypeEnum LogType { get; set; }
 
-        public LogTypeEnum LogOrigin { get; set; }
+        public LogOriginEnum LogOrigin { get; set; }
 
     }
 }

@@ -9,7 +9,7 @@ namespace DataNex.Model.Dtos
 {
     public class LogDto
     {
-        public int Guid { get; set; }
+        public Guid Id { get; set; }
         public DateTime LogDateTime { get; set; }
 
         public string LogName { get; set; }
@@ -23,5 +23,8 @@ namespace DataNex.Model.Dtos
         public Guid UserAddedName { get; set; }
 
         public DateTime DateAdded { get; set; }
+        public string AddedDateTimeFormatted { get; set; }
+        public string LogTypeName { get; set; }
+        public string LogOriginName { get; set; }
     }
 }
