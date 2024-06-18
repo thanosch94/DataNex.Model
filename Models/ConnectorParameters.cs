@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DataNex.Model.Models
 {
     [Table("connector_parameters")]
-    public class ConnectorParameters
+    public class ConnectorParameters:BaseModel
     {
         public ConnectorParameters()
         {

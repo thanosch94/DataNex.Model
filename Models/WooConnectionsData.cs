@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace DataNex.Model.Models
 {
     [Table("connector_wooconnectionsdata")]
-    public  class WooConnectionsData
+    public  class WooConnectionsData:BaseModel
     {
         public WooConnectionsData() 
         {
