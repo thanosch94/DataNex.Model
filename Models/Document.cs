@@ -59,7 +59,6 @@ namespace DataNex.Model.Models
         [StringLength(255)]
         public virtual string? ShippingEmail { get; set; }
 
-        public virtual ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
         public virtual string? UserText1 { get; set; }
         public virtual string? UserText2 { get; set; }
         public virtual string? UserText3 { get; set; }
@@ -72,5 +71,8 @@ namespace DataNex.Model.Models
         public virtual DateTime? UserDate2 { get; set; }
         public virtual DateTime? UserDate3 { get; set; }
         public virtual DateTime? UserDate4 { get; set; }
+        public virtual ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
+        public virtual ICollection<DocumentAdditionalCharge> DocumentAdditionalCharges { get; set; } = new HashSet<DocumentAdditionalCharge>();
+
     }
 }
