@@ -25,6 +25,7 @@ namespace DataNex.Model.Models
 
         public virtual string Endpoint { get; set;}
 
+        public virtual ICollection<ConnectorJob> ConnectorJobs { get; set; } = new HashSet<ConnectorJob>();
 
 
     }
