@@ -23,8 +23,6 @@ namespace DataNex.Model.Dtos.Connector
 
         public Guid DataSourceId { get; set; }
 
-        public Guid? WooConnectionDataSourceId { get; set; }
-
-
+        public Guid? WooConnectionDataSourceId { get; set; }    
     }
 }
