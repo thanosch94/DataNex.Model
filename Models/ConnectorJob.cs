@@ -31,6 +31,6 @@ namespace DataNex.Model.Models
         public Guid? WooConnectionDataSourceId { get; set; }
 
         public WooConnectionsData? WooConnectionDataSource {  get; set; }
-
+        public string? Icon { get; set; }
     }
 }

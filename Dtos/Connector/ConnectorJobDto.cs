@@ -15,6 +15,8 @@ namespace DataNex.Model.Dtos.Connector
         
         public string Name { get; set; }
 
+        public string? Icon { get; set; }
+
         public string? Description { get; set; }
 
         public ConnectorJobTypeEnum JobType { get; set; }
