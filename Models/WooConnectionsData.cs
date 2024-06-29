@@ -16,16 +16,18 @@ namespace DataNex.Model.Models
         {
             Id = Guid.NewGuid();
         }
-        public virtual Guid Id {get; set;}
+        public Guid Id {get; set;}
 
         [StringLength(50)]
-        public virtual string Name { get; set;}
+        public string Name { get; set;}
 
-        public virtual RequestTypeEnum RequestType { get; set;} 
+        public RequestTypeEnum RequestType { get; set;} 
 
-        public virtual string Endpoint { get; set;}
+        public string Endpoint { get; set;}
 
-        public virtual ICollection<ConnectorJob> ConnectorJobs { get; set; } = new HashSet<ConnectorJob>();
+        public WooEntityEnum WooEntity { get; set;} 
+
+        public ICollection<ConnectorJob> ConnectorJobs { get; set; } = new HashSet<ConnectorJob>();
 
 
     }

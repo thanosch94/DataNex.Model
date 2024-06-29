@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace DataNex.Model.Dtos.Woocommerce
 {
-    public class WooCategoryDto
+    public class WooAttributeDto
     {
         public int id { get; set; }
         public string? name { get; set; }
+
         public string? slug { get; set; }
-        public int? parent { get; set; }
-        public string? description { get; set; }
-        public string? display { get; set; }
-        public Object? image { get; set; }
-        public int? menu_order { get; set; }
-        public int? count { get; set; }
+        public string? type { get; set; }
+        public string? order_by { get; set; }
+        public bool? has_archives { get; set; }
     }
 }

@@ -17,5 +17,7 @@ namespace DataNex.Model.Dtos
 
         public string Endpoint { get; set; }
 
+        public WooEntityEnum WooEntity { get; set; }
+
     }
 }
