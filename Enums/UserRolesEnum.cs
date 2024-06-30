@@ -11,6 +11,6 @@ namespace DataNex.Model.Enums
         None = 0,
         User = 1,
         Admin = 2,
-        MasterAdmin = 3
+        DnAdmin = 3
     }
 }
