@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataNex.Model.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -17,16 +18,21 @@ namespace DataNex.Model.Models
             Id= Guid.NewGuid();
         }
 
-        public virtual Guid Id { get; set; }
+        public Guid Id { get; set; }
 
         [StringLength(50)]
-        public virtual string Name { get; set; }
+        public string Name { get; set; }
+
+        [StringLength(10)]
+        public string Abbreviation { get; set; }
 
         [StringLength(50)]
-        public virtual string? Description { get; set; }
+        public string? Description { get; set; }
+
+        public DocumentTypeGroupEnum DocumentTypeGroup { get; set; }
 
 
-        public virtual ICollection<Document> Documnents { get; set; } = new HashSet<Document>();
+        public ICollection<Document> Documents { get; set; } = new HashSet<Document>();
 
     }
 }

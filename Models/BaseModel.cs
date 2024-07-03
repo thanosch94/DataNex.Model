@@ -12,6 +12,8 @@ namespace DataNex.Model.Models
 
         public virtual bool IsDeleted { get; set; } = false;
 
+        public virtual bool IsSeeded { get; set; } = false;
+
         public virtual DateTime DateAdded { get; set; } = DateTime.Now;
 
         public virtual Guid? UserAdded { get; set; } 
