@@ -18,7 +18,6 @@ namespace DataNex.Model.Dtos
         public DocumentTypeGroupEnum  DocumentTypeGroup { get; set; }
 
         public string? Description { get; set; }
-
-
+        public bool IsActive { get; set; }
     }
 }
