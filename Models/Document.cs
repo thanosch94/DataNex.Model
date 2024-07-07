@@ -17,62 +17,64 @@ namespace DataNex.Model.Models
         {
             Id = Guid.NewGuid();
         }
-        public virtual Guid Id { get; set; }
+        public Guid Id { get; set; }
 
         public DateTimeOffset DocumentDateTime { get; set; }
 
-        public virtual Guid DocumentTypeId { get; set; }
+        public Guid DocumentTypeId { get; set; }
 
-        public virtual DocumentType DocumentType { get; set; }
+        public DocumentType DocumentType { get; set; }
 
-        public virtual int DocumentNumber { get; set; }
+        public int DocumentNumber { get; set; }
+
+        [StringLength(20)]
+        public string DocumentCode { get; set; }
 
         public Guid? DocumentStatusId { get; set; }
 
         public Status? DocumentStatus { get; set; }
 
-        public virtual Guid CustomerId { get; set; }
+        public Guid CustomerId { get; set; }
 
-        public virtual Customer Customer { get; set; }
+        public Customer Customer { get; set; }
 
         [Precision(18, 2)]
-        public virtual decimal? DocumentTotal { get; set; }
+        public decimal? DocumentTotal { get; set; }
 
         [StringLength(255)]
-        public virtual string? ShippingAddress { get; set; }
+        public string? ShippingAddress { get; set; }
 
         [StringLength(50)]
-        public virtual string? ShippingRegion { get; set; }
+        public string? ShippingRegion { get; set; }
 
-        public virtual int? ShippingPostalCode { get; set; }
-
-        [StringLength(50)]
-        public virtual string? ShippingCity { get; set; }
+        public int? ShippingPostalCode { get; set; }
 
         [StringLength(50)]
-        public virtual string? ShippingCountry { get; set; }
+        public string? ShippingCity { get; set; }
 
-        public virtual long? ShippingPhone1 { get; set; }
+        [StringLength(50)]
+        public string? ShippingCountry { get; set; }
 
-        public virtual long? ShippingPhone2 { get; set; }
+        public long? ShippingPhone1 { get; set; }
+
+        public long? ShippingPhone2 { get; set; }
 
         [StringLength(255)]
-        public virtual string? ShippingEmail { get; set; }
+        public string? ShippingEmail { get; set; }
 
-        public virtual string? UserText1 { get; set; }
-        public virtual string? UserText2 { get; set; }
-        public virtual string? UserText3 { get; set; }
-        public virtual string? UserText4 { get; set; }
-        public virtual long? UserNumber1 { get; set; }
-        public virtual long? UserNumber2 { get; set; }
-        public virtual long? UserNumber3 { get; set; }
-        public virtual long? UserNumber4 { get; set; }
-        public virtual DateTime? UserDate1 { get; set; }
-        public virtual DateTime? UserDate2 { get; set; }
-        public virtual DateTime? UserDate3 { get; set; }
-        public virtual DateTime? UserDate4 { get; set; }
-        public virtual ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
-        public virtual ICollection<DocumentAdditionalCharge> DocumentAdditionalCharges { get; set; } = new HashSet<DocumentAdditionalCharge>();
-
+        public string? UserText1 { get; set; }
+        public string? UserText2 { get; set; }
+        public string? UserText3 { get; set; }
+        public string? UserText4 { get; set; }
+        public long? UserNumber1 { get; set; }
+        public long? UserNumber2 { get; set; }
+        public long? UserNumber3 { get; set; }
+        public long? UserNumber4 { get; set; }
+        public DateTime? UserDate1 { get; set; }
+        public DateTime? UserDate2 { get; set; }
+        public DateTime? UserDate3 { get; set; }
+        public DateTime? UserDate4 { get; set; }
+        public ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
+        public ICollection<DocumentAdditionalCharge> DocumentAdditionalCharges { get; set; } = new HashSet<DocumentAdditionalCharge>();
     }
 }

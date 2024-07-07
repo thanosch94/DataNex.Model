@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -23,6 +24,7 @@ namespace DataNex.Model.Models
         public Guid AdditionalChargeId { get; set; }
         public AdditionalCharge AdditionalCharge { get; set; }
 
+        [Precision(18,2)]
         public decimal AdditionalChargeAmount {  get; set; } 
     }
 }
