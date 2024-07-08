@@ -27,8 +27,9 @@ namespace DataNex.Model.Models
         [StringLength(10)]
         public string? Abbreviation { get; set; }
 
-        public short Rate { get; set; } 
+        public short Rate { get; set; }
 
+        public virtual ICollection<Product> Products { get; set; } = new HashSet<Product>();
 
     }
 }

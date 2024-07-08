@@ -27,11 +27,17 @@ namespace DataNex.Model.Models
 
         public virtual string? Description { get; set; }
 
-        public virtual string? ImagePath { get; set; } 
+        public virtual string? ImagePath { get; set; }
 
+        public Guid VatClassId { get; set; }
+
+        public VatClass VatClass { get; set; }
 
         [Precision(18,2)]
-        public virtual decimal? Price { get; set; }
+        public virtual decimal? RetailPrice { get; set; }
+
+        [Precision(18, 2)]
+        public virtual decimal? WholesalePrice { get; set; }
 
 
         public virtual Guid? BrandId { get; set; }

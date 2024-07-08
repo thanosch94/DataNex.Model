@@ -34,5 +34,7 @@ namespace DataNex.Model.Dtos
         public string CustomerName { get; set; }
         public string DocumentDateString { get; set; }
         public DateTimeOffset DocumentDate { get; set; }
+        public decimal VatAmount { get; set; }
+        public decimal TotalVatAmount { get; set; }
     }
 }

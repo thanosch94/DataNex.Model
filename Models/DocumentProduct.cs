@@ -30,8 +30,13 @@ namespace DataNex.Model.Models
         [Precision(18,2)]
         public virtual decimal Price { get; set; }
 
+        [Precision(18, 2)]
+        public virtual decimal VatAmount {  get; set; }
 
         public virtual int Quantity { get; set;}
+
+        [Precision(18, 2)]
+        public virtual decimal TotalVatAmount { get; set; }
 
         [Precision(18, 2)]
         public virtual decimal TotalPrice { get; set; }
