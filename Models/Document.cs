@@ -34,9 +34,14 @@ namespace DataNex.Model.Models
 
         public Status? DocumentStatus { get; set; }
 
-        public Guid CustomerId { get; set; }
+        public Guid? CustomerId { get; set; }
 
-        public Customer Customer { get; set; }
+        public Customer? Customer { get; set; }     
+        
+        public Guid? SupplierId { get; set; }
+
+        public Supplier? Supplier { get; set; }
+
 
         [Precision(18, 2)]
         public decimal? DocumentTotal { get; set; }

@@ -15,5 +15,8 @@ namespace DataNex.Model.Models
             Id = Guid.NewGuid();
         }
         public Guid Id { get; set; }
+
+        public ICollection<Document> Documents { get; set; } = new HashSet<Document>();
+
     }
 }

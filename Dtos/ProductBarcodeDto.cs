@@ -14,9 +14,14 @@ namespace DataNex.Model.Dtos
         public Guid ProductId { get; set; }
 
         public Guid? SizeId { get; set; }
+        public Guid? VatClassId { get; set; }
+
+        public string? Sku { get; set; }
 
         public string? Barcode { get; set; }
         public string? SizeName { get; set; }
+        public string? ProductName { get; set; }
+        public decimal? ProductRetailPrice { get; set; }
 
         public bool? IsEditable { get; set; }
     }
