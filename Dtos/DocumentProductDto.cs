@@ -19,7 +19,7 @@ namespace DataNex.Model.Dtos
 
         public Guid? ProductSizeId { get; set; }
 
-        public ProductSize? ProductSize { get; set; }
+        //public ProductSize? ProductSize { get; set; }
 
         public string ProductName { get; set; }
 
@@ -27,14 +27,16 @@ namespace DataNex.Model.Dtos
 
         public string SizeName { get; set; }
         public string Barcode { get; set; }
-        public decimal Price { get; set; }
+        public decimal ProductRetailPrice { get; set; }
         public decimal TotalPrice { get; set; }
         public bool IsRowFilled { get; set; }
         public string DocumentCode { get; set; }
-        public string CustomerName { get; set; }
+        public string? CustomerName { get; set; }
         public string DocumentDateString { get; set; }
         public DateTimeOffset DocumentDate { get; set; }
         public decimal VatAmount { get; set; }
         public decimal TotalVatAmount { get; set; }
+
+
     }
 }
