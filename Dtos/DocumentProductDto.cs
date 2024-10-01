@@ -36,7 +36,6 @@ namespace DataNex.Model.Dtos
         public DateTimeOffset DocumentDate { get; set; }
         public decimal VatAmount { get; set; }
         public decimal TotalVatAmount { get; set; }
-
-
+        public Guid VatClassId { get; set; }
     }
 }

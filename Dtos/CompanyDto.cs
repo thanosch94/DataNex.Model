@@ -13,5 +13,6 @@ namespace DataNex.Model.Dtos
         public string Name { get; set; }
 
         public bool IsDefault { get; set; }
+        public bool IsActive { get; set; }
     }
 }
