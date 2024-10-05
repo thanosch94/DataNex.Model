@@ -31,6 +31,10 @@ namespace DataNex.Model.Models
 
         public DocumentTypeGroupEnum DocumentTypeGroup { get; set; }
 
+        public bool IsPersonBalanceAffected {  get; set; }
+
+        public bool IsWareHouseAffected { get; set; }
+
 
         public ICollection<Document> Documents { get; set; } = new HashSet<Document>();
 
