@@ -20,8 +20,8 @@ namespace DataNex.Model.Dtos
         public string? Description { get; set; }
 
         public bool IsActive { get; set; }
-        public bool IsPersonBalanceAffected { get; set; }
+        public DocTypeAffectBehaviorEnum PersonBalanceAffectBehavior { get; set; }
 
-        public bool IsWareHouseAffected { get; set; }
+        public DocTypeAffectBehaviorEnum WareHouseAffectBehavior { get; set; }
     }
 }
