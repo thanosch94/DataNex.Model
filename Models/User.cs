@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,11 @@ namespace DataNex.Model.Models
     [Table("AspNetUsers")]
     public class User:IdentityUser<Guid>
     {
+        public int? SerialNumber { get; set; }
+
+        [StringLength(25)]
+        public string? Code { get; set; }
+
         public string Name { get; set; }
         public virtual bool IsActive { get; set; } = true;
 

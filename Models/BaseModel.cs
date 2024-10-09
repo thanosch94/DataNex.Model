@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,11 @@ namespace DataNex.Model.Models
 {
     public class BaseModel
     {
+        public int? SerialNumber { get; set; }
+
+        [StringLength(25)]
+        public string? Code { get; set; }
+
         public virtual bool IsActive { get; set; } = true;
 
         public virtual bool IsDeleted { get; set; } = false;

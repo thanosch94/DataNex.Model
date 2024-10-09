@@ -12,7 +12,11 @@ namespace DataNex.Model.Dtos.Connector
     public class ConnectorJobDto
     {
         public Guid Id { get; set; }
-        
+
+        public int? SerialNumber { get; set; }
+
+        public string? Code { get; set; }
+
         public string Name { get; set; }
 
         public string? Icon { get; set; }

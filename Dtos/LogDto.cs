@@ -10,6 +10,10 @@ namespace DataNex.Model.Dtos
     public class LogDto
     {
         public Guid Id { get; set; }
+
+        public int? SerialNumber { get; set; }
+
+        public string? Code { get; set; }
         public DateTime LogDateTime { get; set; }
 
         public string LogName { get; set; }

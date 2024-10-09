@@ -11,6 +11,10 @@ namespace DataNex.Model.Dtos
     {
         public Guid Id { get; set; }
 
+        public int? SerialNumber { get; set; }
+
+        public string? Code { get; set; }
+
         public string Name { get; set; }
 
         public string Abbreviation { get; set; }

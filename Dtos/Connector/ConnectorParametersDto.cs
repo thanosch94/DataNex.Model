@@ -10,6 +10,10 @@ namespace DataNex.Model.Dtos
     {
         public Guid Id { get; set; }
 
+        public int? SerialNumber { get; set; }
+
+        public string? Code { get; set; }
+
         public Guid? CompanyId { get; set; }
 
         public string? WooBaseUrl { get; set; }

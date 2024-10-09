@@ -18,9 +18,6 @@ namespace DataNex.Model.Models
 
         public Guid Id { get; set; }
 
-        [StringLength(10)]
-        public string Code { get; set; }
-
         [StringLength(50)]
         public string Name { get; set; }
 
