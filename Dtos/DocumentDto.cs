@@ -30,7 +30,7 @@ namespace DataNex.Model.Dtos
 
         public string? CustomerName { get; set; }
 
-        public long? CustomerPhone1 { get; set; }
+        public string? CustomerPhone1 { get; set; }
 
         public decimal? DocumentTotal { get; set; }
 
@@ -38,15 +38,15 @@ namespace DataNex.Model.Dtos
 
         public string? ShippingRegion { get; set; }
 
-        public int? ShippingPostalCode { get; set; }
+        public string? ShippingPostalCode { get; set; }
 
         public string? ShippingCity { get; set; }
 
         public string? ShippingCountry { get; set; }
 
-        public long? ShippingPhone1 { get; set; }
+        public string? ShippingPhone1 { get; set; }
 
-        public long? ShippingPhone2 { get; set; }
+        public string? ShippingPhone2 { get; set; }
 
         public string? ShippingEmail { get; set; }
 

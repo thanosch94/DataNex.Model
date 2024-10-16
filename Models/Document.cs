@@ -52,7 +52,7 @@ namespace DataNex.Model.Models
         [StringLength(50)]
         public string? ShippingRegion { get; set; }
 
-        public int? ShippingPostalCode { get; set; }
+        public string? ShippingPostalCode { get; set; }
 
         [StringLength(50)]
         public string? ShippingCity { get; set; }
@@ -60,9 +60,9 @@ namespace DataNex.Model.Models
         [StringLength(50)]
         public string? ShippingCountry { get; set; }
 
-        public long? ShippingPhone1 { get; set; }
+        public string? ShippingPhone1 { get; set; }
 
-        public long? ShippingPhone2 { get; set; }
+        public string? ShippingPhone2 { get; set; }
 
         [StringLength(255)]
         public string? ShippingEmail { get; set; }

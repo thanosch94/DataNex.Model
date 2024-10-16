@@ -21,9 +21,9 @@ namespace DataNex.Model.Models
 
         public virtual string? Country { get; set; }
 
-        public virtual long? Phone1 { get; set; }
+        public virtual string? Phone1 { get; set; }
 
-        public virtual long? Phone2 { get; set; }
+        public virtual string? Phone2 { get; set; }
 
         public virtual string? Email { get; set; }
 
