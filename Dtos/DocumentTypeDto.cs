@@ -24,6 +24,8 @@ namespace DataNex.Model.Dtos
         public string? Description { get; set; }
 
         public bool IsActive { get; set; }
+        public Guid? CompanyId { get; set; }
+
         public DocTypeAffectBehaviorEnum PersonBalanceAffectBehavior { get; set; }
 
         public DocTypeAffectBehaviorEnum WareHouseAffectBehavior { get; set; }

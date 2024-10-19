@@ -39,5 +39,7 @@ namespace DataNex.Model.Dtos
 
         public string? TaxOffice { get; set; }
 
+        public Guid? CompanyId { get; set; }
+
     }
 }

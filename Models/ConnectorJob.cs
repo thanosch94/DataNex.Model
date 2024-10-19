@@ -32,5 +32,8 @@ namespace DataNex.Model.Models
 
         public WooConnectionsData? WooConnectionDataSource {  get; set; }
         public string? Icon { get; set; }
+
+        public virtual Guid? CompanyId { get; set; }
+        public virtual Company? Company { get; set; }
     }
 }

@@ -21,6 +21,8 @@ namespace DataNex.Model.Dtos
         public RequestTypeEnum RequestType { get; set; }
 
         public string Endpoint { get; set; }
+        public Guid? CompanyId { get; set; }
+
 
         public WooEntityEnum WooEntity { get; set; }
 

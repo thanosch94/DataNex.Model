@@ -30,5 +30,8 @@ namespace DataNex.Model.Models
         public virtual int? VatNumber { get; set; }
 
         public virtual string? TaxOffice { get; set; }
+
+        public virtual Guid? CompanyId { get; set; }
+
     }
 }

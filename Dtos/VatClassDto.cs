@@ -18,7 +18,8 @@ namespace DataNex.Model.Dtos
         public string? Description { get; set; }
         public string? Abbreviation { get; set; }
         public short Rate { get; set; }
-        public bool IsActive { get; set; }  
+        public bool IsActive { get; set; }
+        public Guid? CompanyId { get; set; }
 
     }
 }

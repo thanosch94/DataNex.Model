@@ -15,6 +15,9 @@ namespace DataNex.Model.Models
             Id = Guid.NewGuid();    
         }
         public virtual Guid Id { get; set; }
+        public virtual Guid? CompanyId { get; set; }
+
+        public virtual Company? Company { get; set; }
 
         public virtual ICollection<Document> Documents { get; set; } = new HashSet<Document>();
 

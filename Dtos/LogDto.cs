@@ -30,5 +30,7 @@ namespace DataNex.Model.Dtos
         public string AddedDateTimeFormatted { get; set; }
         public string LogTypeName { get; set; }
         public string LogOriginName { get; set; }
+        public Guid? CompanyId { get; set; }
+
     }
 }

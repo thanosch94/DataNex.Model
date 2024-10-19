@@ -35,6 +35,8 @@ namespace DataNex.Model.Models
 
         public virtual UserRolesEnum UserRole { get; set; }
 
-        public virtual Guid? CompanyId { get; set; }    
+        public virtual Guid? CompanyId { get; set; }
+
+        public virtual Company? Company { get; set; }
     }
 }

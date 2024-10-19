@@ -21,6 +21,10 @@ namespace DataNex.Model.Models
         [StringLength(50)]
         public virtual string Name { get; set; }
 
+        public virtual Guid? CompanyId { get; set; }
+
+        public virtual Company? Company { get; set; }
+
         public virtual ICollection<Document> Documnents { get; set; } = new HashSet<Document>();
 
     }

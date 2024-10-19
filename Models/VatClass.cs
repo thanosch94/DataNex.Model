@@ -31,5 +31,9 @@ namespace DataNex.Model.Models
 
         public virtual ICollection<Product> Products { get; set; } = new HashSet<Product>();
 
+        public Guid? CompanyId { get; set; }
+
+        public Company? Company { get; set; }
+
     }
 }

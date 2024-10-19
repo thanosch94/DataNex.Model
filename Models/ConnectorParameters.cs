@@ -17,6 +17,7 @@ namespace DataNex.Model.Models
         public virtual Guid Id { get; set; }
 
         public virtual Guid? CompanyId { get; set; }
+        public virtual Company? Company { get; set; }
 
         public virtual string? WooBaseUrl { get; set; }
 

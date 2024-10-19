@@ -79,6 +79,8 @@ namespace DataNex.Model.Models
         public DateTime? UserDate2 { get; set; }
         public DateTime? UserDate3 { get; set; }
         public DateTime? UserDate4 { get; set; }
+        public virtual Guid? CompanyId { get; set; }
+        public virtual Company? Company { get; set; }
         public ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
         public ICollection<DocumentAdditionalCharge> DocumentAdditionalCharges { get; set; } = new HashSet<DocumentAdditionalCharge>();
     }

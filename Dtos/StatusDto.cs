@@ -15,5 +15,7 @@ namespace DataNex.Model.Dtos
         public string? Code { get; set; }
 
         public string Name { get; set; }
+        public Guid? CompanyId { get; set; }
+
     }
 }

@@ -35,6 +35,9 @@ namespace DataNex.Model.Models
 
         public DocTypeAffectBehaviorEnum WareHouseAffectBehavior { get; set; }
 
+        public virtual Guid? CompanyId { get; set; }
+
+        public virtual Company? Company { get; set; }
 
         public ICollection<Document> Documents { get; set; } = new HashSet<Document>();
 

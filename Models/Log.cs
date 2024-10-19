@@ -23,5 +23,8 @@ namespace DataNex.Model.Models
 
         public LogOriginEnum LogOrigin { get; set; }
 
+        public virtual Guid? CompanyId { get; set; }
+
+        public virtual Company? Company { get; set; }
     }
 }

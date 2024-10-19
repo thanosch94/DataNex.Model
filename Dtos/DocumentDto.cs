@@ -28,6 +28,9 @@ namespace DataNex.Model.Dtos
         public Guid? CustomerId { get; set; }
         public Guid? SupplierId { get; set; }
 
+        public Guid? CompanyId { get; set; }
+
+
         public string? CustomerName { get; set; }
 
         public string? CustomerPhone1 { get; set; }

@@ -29,6 +29,9 @@ namespace DataNex.Model.Models
 
         public ICollection<ConnectorJob> ConnectorJobs { get; set; } = new HashSet<ConnectorJob>();
 
+        public Guid? CompanyId { get; set;}
+
+        public Company? Company { get; set;}
 
     }
 }

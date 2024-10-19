@@ -19,8 +19,9 @@ namespace DataNex.Model.Dtos
         public string Name { get; set; }
 
         public string? Abbreviation { get; set; }
+        public Guid? CompanyId { get; set; }
 
-        public virtual ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
+        //public virtual ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
 
     }
 }

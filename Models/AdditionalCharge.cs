@@ -20,6 +20,9 @@ namespace DataNex.Model.Models
         [StringLength(100)]
         public string Name { get; set; }
 
+        public virtual Guid? CompanyId { get; set; }
+        public virtual Company? Company { get; set; }
+
         public virtual ICollection<DocumentAdditionalCharge> DocumentAdditionalCharges { get; set; } = new HashSet<DocumentAdditionalCharge>();
 
     }

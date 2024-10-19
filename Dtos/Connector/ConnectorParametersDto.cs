@@ -21,5 +21,6 @@ namespace DataNex.Model.Dtos
         public string? WooConsumerKey { get; set; }
 
         public string? WooConsumerSecret { get; set; }
+
     }
 }
