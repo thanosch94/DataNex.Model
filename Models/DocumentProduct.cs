@@ -17,33 +17,33 @@ namespace DataNex.Model.Models
             Id = Guid.NewGuid();
         }
 
-        public virtual Guid Id { get; set; }
+        public Guid Id { get; set; }
 
-        public virtual Guid DocumentId { get; set; }
+        public Guid DocumentId { get; set; }
         
-        public virtual Document Document { get; set; }
+        public Document Document { get; set; }
 
-        public virtual Guid ProductId { get; set;}
+        public Guid ProductId { get; set;}
 
-        public virtual Product Product { get; set;}
+        public Product Product { get; set;}
 
         [Precision(18,2)]
-        public virtual decimal Price { get; set; }
+        public decimal Price { get; set; }
 
         [Precision(18, 2)]
-        public virtual decimal VatAmount {  get; set; }
+        public decimal VatAmount {  get; set; }
 
-        public virtual int Quantity { get; set;}
-
-        [Precision(18, 2)]
-        public virtual decimal TotalVatAmount { get; set; }
+        public int Quantity { get; set;}
 
         [Precision(18, 2)]
-        public virtual decimal TotalPrice { get; set; }
+        public decimal TotalVatAmount { get; set; }
 
-        public virtual Guid? ProductSizeId { get; set;}
+        [Precision(18, 2)]
+        public decimal TotalPrice { get; set; }
 
-        public virtual ProductSize? ProductSize { get; set; }
+        public Guid? ProductSizeId { get; set;}
+
+        public ProductSize? ProductSize { get; set; }
 
 
     }
