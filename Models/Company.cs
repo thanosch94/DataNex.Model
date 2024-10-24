@@ -38,6 +38,9 @@ namespace DataNex.Model.Models
         public ICollection<Supplier> Suppliers { get; set; } = new HashSet<Supplier>();
 
         public ICollection<ProductSize> ProductSizes { get; set; } = new HashSet<ProductSize>();
+        public ICollection<Lot> Lots { get; set; } = new HashSet<Lot>();
+        public ICollection<LotSettings> LotsSettings { get; set; } = new HashSet<LotSettings>();
+        public ICollection<GeneralOptions> GeneralAppOptions { get; set; } = new HashSet<GeneralOptions>();
 
     }
 }
