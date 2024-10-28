@@ -45,6 +45,10 @@ namespace DataNex.Model.Models
 
         public ProductSize? ProductSize { get; set; }
 
+        public ICollection<DocumentProductLotQuantity> DocumentProductLotsQuantities { get; set; }
+
+
+        
 
     }
 }

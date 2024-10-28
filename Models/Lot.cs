@@ -32,6 +32,7 @@ namespace DataNex.Model.Models
 
         public Company Company { get; set; }
 
+        public ICollection<DocumentProductLotQuantity> DocumentProductLotsQuantities { get; set; } = new HashSet<DocumentProductLotQuantity>();
 
     }
 }

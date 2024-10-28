@@ -41,5 +41,6 @@ namespace DataNex.Model.Dtos
         public decimal VatAmount { get; set; }
         public decimal TotalVatAmount { get; set; }
         public Guid VatClassId { get; set; }
+        public ICollection<DocumentProductLotQuantityDto> DocumentProductLotsQuantities { get; set; } = new HashSet<DocumentProductLotQuantityDto>();
     }
 }
