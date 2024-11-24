@@ -18,11 +18,17 @@ namespace DataNex.Model.Dtos
 
         public string Name { get; set; }
 
+        public Guid ProductId { get; set; }
+
         public string? Notes { get; set; }
 
         public DateTime? ProdDate { get; set; } //Production Date
 
         public DateTime? ExpDate { get; set; } //Expiration Date
+
+        public Guid SupplierId { get; set; }
+
+        public int RemainingQty { get; set; }
 
         public Guid CompanyId { get; set; }
     }

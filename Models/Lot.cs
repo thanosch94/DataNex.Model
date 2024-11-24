@@ -21,12 +21,18 @@ namespace DataNex.Model.Models
         [StringLength(25)]
         public string Name { get; set; }
 
+        public Guid ProductId { get; set; } //Do not Add navigation property - Circular Reference
+
         [StringLength(255)]
         public string? Notes { get; set; }
 
         public DateTime? ProdDate { get; set; } //Production Date
 
         public DateTime? ExpDate { get; set; } //Expiration Date
+
+        public Guid SupplierId { get; set; } //Do not Add navigation property - Circular Reference
+
+        public int RemainingQty { get; set; }
 
         public Guid CompanyId { get; set; }
 

@@ -13,6 +13,8 @@ namespace DataNex.Model.Dtos
 
         public LotStrategyEnum LotStrategy { get; set; }
 
+        public LotStrategyApplyFieldEnum LotStrategyApplyField { get; set; }
+
         public Guid CompanyId { get; set; }
     }
 }
