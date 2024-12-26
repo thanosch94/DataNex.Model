@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,8 +22,31 @@ namespace DataNex.Model.Models
 
         public virtual bool IsSeeded { get; set; } = false;
 
-        public virtual DateTime DateAdded { get; set; } = DateTime.Now;
-
+        private DateTime _DateAdded;
+        
+        [BackingField((nameof(_DateAdded)))]
+        public virtual DateTime DateAdded
+        {
+            get
+            {
+                return _DateAdded.AddHours(TimeZoneSettings.UserOffsetHours);
+            }
+            set
+            {
+                _DateAdded = DateTime.UtcNow;
+            }
+        }
+        [NotMapped]
+        public virtual DateTime LocalDateAdded {
+            get
+            {
+                return _DateAdded.AddHours(TimeZoneSettings.UserOffsetHours);
+            }
+            set
+            {
+                _DateAdded = DateTime.UtcNow;
+            }
+        }
         public virtual Guid? UserAdded { get; set; } 
 
         public virtual DateTime? DateUpdated { get; set;}
