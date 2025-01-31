@@ -66,5 +66,6 @@ namespace DataNex.Model.Dtos
         public DateTime? UserDate3 { get; set; }
         public DateTime? UserDate4 { get; set; }
         public string DocumentCode { get; set; }
+        public Guid VatClassId { get; set; }
     }
 }

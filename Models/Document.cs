@@ -83,5 +83,9 @@ namespace DataNex.Model.Models
         public virtual Company? Company { get; set; }
         public ICollection<DocumentProduct> DocumentProducts { get; set; } = new HashSet<DocumentProduct>();
         public ICollection<DocumentAdditionalCharge> DocumentAdditionalCharges { get; set; } = new HashSet<DocumentAdditionalCharge>();
+        public Guid VatClassId { get; set; }
+
+        public VatClass VatClass { get; set; }
+
     }
 }

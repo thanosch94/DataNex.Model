@@ -22,8 +22,10 @@ namespace DataNex.Model.Models
         public virtual string? Sku { get; set; }
 
         [StringLength(255)]
-
         public virtual string Name { get; set; }
+
+        [StringLength(255)]
+        public virtual string? Barcode { get; set; }
 
         public virtual string? Description { get; set; }
 
@@ -43,6 +45,9 @@ namespace DataNex.Model.Models
         public virtual Guid? BrandId { get; set; }
 
         public virtual Brand? Brand { get; set; }
+        public Guid? Category1Id { get; set; }
+        public Guid? Category2Id { get; set; }
+        public Guid? Category3Id { get; set; }
 
         public virtual Guid? CompanyId { get; set; }
 

@@ -19,6 +19,7 @@ namespace DataNex.Model.Dtos
         public string? Code { get; set; }
 
         public string? Sku { get; set; }
+        public string? Barcode { get; set; }
 
         public string Name { get; set; }
 
@@ -34,6 +35,10 @@ namespace DataNex.Model.Dtos
 
         public Guid? BrandId { get; set; }
         public string BrandName { get; set; }
+
+        public Guid? Category1Id { get; set; }
+        public Guid? Category2Id { get; set; }
+        public Guid? Category3Id { get; set; }
         public Guid? CompanyId { get; set; }
 
     }
