@@ -10,6 +10,7 @@ namespace DataNex.Model.Dtos
     public class CompanyDto
     {
         public Guid Id { get; set; }
+        public Guid? ClientId { get; set; }
         public int? SerialNumber { get; set; }
         public string? Code { get; set; }
         public string Name { get; set; }

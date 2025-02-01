@@ -17,6 +17,9 @@ namespace DataNex.Model.Models
         }
         public Guid Id { get; set; }
 
+        public Guid? ClientId { get; set; }
+
+        public Client? Client { get; set; }
         public string Name { get; set; }
 
         public bool IsDefault { get; set; }
