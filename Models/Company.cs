@@ -20,6 +20,8 @@ namespace DataNex.Model.Models
         public Guid? ClientId { get; set; }
 
         public Client? Client { get; set; }
+
+        public string? CompanyLoginCode { get; set; } 
         public string Name { get; set; }
 
         public bool IsDefault { get; set; }

@@ -9,15 +9,10 @@ using System.Threading.Tasks;
 
 namespace DataNex.Model.Models
 {
-    [Table("AspNetUserRoles")]
-    public class Roles:IdentityRole<Guid>
+    [Table("AspNetRoles")]
+    public class Role : IdentityRole<Guid>
     {
-        public override string? ConcurrencyStamp { get; set; } = Guid.NewGuid().ToString();
-
-        public int? SerialNumber { get; set; }
-
-        [StringLength(25)]
-        public string? Code { get; set; }
+        //public override string? ConcurrencyStamp { get; set; } = Guid.NewGuid().ToString();
 
         public virtual bool IsActive { get; set; } = true;
 
@@ -44,4 +39,5 @@ namespace DataNex.Model.Models
 
         public virtual Guid? UserUpdated { get; set; }
     }
+   
 }
