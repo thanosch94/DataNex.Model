@@ -30,5 +30,6 @@ namespace DataNex.Model.Dtos
 
         public Guid? CompanyId { get; set; }
         public string Token { get; set; }
+        public CompanyDto? Company { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace DataNex.Model.Dtos
     public class ApiResponseDto
     {
         public Object? Result { get; set; }
+        public Object? Result2 { get; set; }
 
         public bool Success { get; set; }
 

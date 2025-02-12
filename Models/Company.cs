@@ -19,12 +19,22 @@ namespace DataNex.Model.Models
 
         public Guid? ClientId { get; set; }
 
-        public Client? Client { get; set; }
 
         public string? CompanyLoginCode { get; set; } 
         public string Name { get; set; }
 
         public bool IsDefault { get; set; }
+
+        public string Address { get; set; }
+        public string? Region { get; set; }
+        public string PostalCode { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+        public string Phone1 { get; set; }
+        public string? Phone2 { get; set; }
+        public string Email { get; set; }
+        public string VatNumber { get; set; }
+        public string TaxOffice { get; set; }
 
         public ICollection<WooConnectionsData> WooConnectionData { get; set; } = new HashSet<WooConnectionsData>();
         public ICollection<WareHouse> WareHouses { get; set; } = new HashSet<WareHouse>();
@@ -46,6 +56,7 @@ namespace DataNex.Model.Models
         public ICollection<Lot> Lots { get; set; } = new HashSet<Lot>();
         public ICollection<LotSettings> LotsSettings { get; set; } = new HashSet<LotSettings>();
         public ICollection<GeneralOptions> GeneralAppOptions { get; set; } = new HashSet<GeneralOptions>();
+
 
     }
 }
