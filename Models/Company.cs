@@ -56,6 +56,7 @@ namespace DataNex.Model.Models
         public ICollection<Lot> Lots { get; set; } = new HashSet<Lot>();
         public ICollection<LotSettings> LotsSettings { get; set; } = new HashSet<LotSettings>();
         public ICollection<GeneralOptions> GeneralAppOptions { get; set; } = new HashSet<GeneralOptions>();
+        public ICollection<WorkItemType> WorkItemTypes { get; set; } = new HashSet<WorkItemType>();
 
 
     }

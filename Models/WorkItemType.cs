@@ -1,34 +1,26 @@
 ﻿using DataNex.Model.Enums;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataNex.Model.Models
 {
-    [Table("datanex_statuses")]
-
-    public class Status:BaseModel
+    [Table("datanex_workitem_types")]
+    public class WorkItemType : BaseModel
     {
-        public Status()
+        public WorkItemType()
         {
             Id = Guid.NewGuid();
+
         }
         public Guid Id { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }
 
-        public StatusTypeEnum StatusType { get; set; }
-
+        public WorkItemTypeEnum Type { get; set; } //It refers to the entity (Task, Project)
         public Guid? CompanyId { get; set; }
 
         public Company? Company { get; set; }
-
-        public ICollection<Document> Documnents { get; set; } = new HashSet<Document>();
 
     }
 }

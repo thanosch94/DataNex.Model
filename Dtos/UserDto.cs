@@ -25,11 +25,28 @@ namespace DataNex.Model.Dtos
 
         public string PasswordHash { get; set; }
 
+        public string Token { get; set; }
+        public Guid? UserRoleId { get; set; } 
 
-        public UserRolesEnum UserRole { get; set; }
+        public byte[]? Image { get; set; }
+
+        public string? Country { get; set; }
+        public string? City { get; set; }
+        public string? PostalCode { get; set; }
+        public string? Address { get; set; }
+        public string? Phone1 { get; set; }
+        public string? Phone2 { get; set; }
+        public string? Notes { get; set; }
+        public DateTime? BirthDay { get; set; }
+        public string? Occupation { get; set; }
+        public string? FacebookUrl { get; set; }
+        public string? InstagramUrl { get; set; }
+        public string? LinkedInUrl { get; set; }
 
         public Guid? CompanyId { get; set; }
-        public string Token { get; set; }
+        public bool IsActive { get; set; }
+  
         public CompanyDto? Company { get; set; }
+        public bool IsPasswordSet { get; set; }
     }
 }

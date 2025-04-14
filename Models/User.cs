@@ -1,12 +1,15 @@
-﻿using DataNex.Model.Enums;
+﻿using DataNex.Model.Dtos;
+using DataNex.Model.Enums;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DataNex.Model.Models
 {
@@ -20,23 +23,37 @@ namespace DataNex.Model.Models
         public string? Code { get; set; }
 
         public string Name { get; set; }
-        public virtual bool IsActive { get; set; } = true;
+        public bool IsActive { get; set; } = true;
 
-        public virtual bool IsDeleted { get; set; } = false;
+        public bool IsDeleted { get; set; } = false;
 
-        public virtual DateTime DateAdded { get; set; } = DateTime.Now;
+        public DateTime DateAdded { get; set; } = DateTime.Now;
 
-        public virtual Guid UserAdded { get; set; }
+        public Guid UserAdded { get; set; }
 
-        public virtual DateTime? DateUpdated { get; set; }
+        public DateTime? DateUpdated { get; set; }
 
-        public virtual Guid? UserUpdated { get; set; }
+        public Guid? UserUpdated { get; set; }
 
+        //public Guid? UserRole { get; set; } //User Roles are saved in another table
 
-        public virtual UserRolesEnum UserRole { get; set; }
+        public byte[]? Image { get; set; }
 
-        public virtual Guid? CompanyId { get; set; }
+        public string? Country { get; set; }
+        public string? City { get; set; }
+        public string? PostalCode { get; set; }
+        public string? Address { get; set; }
+        public string? Phone1 { get; set; }
+        public string? Phone2 { get; set; }
+        public string? Notes { get; set; }
+        public DateTime? BirthDay { get; set; }
+        public string? Occupation { get; set; }
+        public string? FacebookUrl { get; set; }
+        public string? InstagramUrl { get; set; }
+        public string? LinkedInUrl { get; set; }
 
-        public virtual Company? Company { get; set; }
+        public Guid? CompanyId { get; set; }
+
+        public Company? Company { get; set; }
     }
 }
