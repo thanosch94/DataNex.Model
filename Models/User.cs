@@ -55,5 +55,8 @@ namespace DataNex.Model.Models
         public Guid? CompanyId { get; set; }
 
         public Company? Company { get; set; }
+        //public ICollection<WorkItem> WorkItems { get; set; } = new HashSet<WorkItem>(); 
+        //TODO Check why the above on insert new workitem throws object cycle error
+
     }
 }

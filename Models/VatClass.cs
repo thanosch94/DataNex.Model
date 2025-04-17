@@ -29,7 +29,7 @@ namespace DataNex.Model.Models
 
         public short Rate { get; set; }
 
-        public virtual ICollection<Product> Products { get; set; } = new HashSet<Product>();
+        public ICollection<Product> Products { get; set; } = new HashSet<Product>();
 
         public Guid? CompanyId { get; set; }
 

@@ -14,7 +14,7 @@ namespace DataNex.Model.Dtos
 
         public string Name { get; set; }
 
-        public WorkItemTypeEnum Type { get; set; } //It refers to the entity (Task, Project)
+        public WorkItemCategoryEnum Category { get; set; } //It refers to the entity (Task, Project)
         public Guid? CompanyId { get; set; }
     }
 }

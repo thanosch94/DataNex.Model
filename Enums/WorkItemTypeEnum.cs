@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataNex.Model.Enums
 {
-    public enum WorkItemTypeEnum
+    public enum WorkItemCategoryEnum
     {
         None = 0,
         Task = 1,

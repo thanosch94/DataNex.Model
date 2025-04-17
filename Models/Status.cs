@@ -29,6 +29,6 @@ namespace DataNex.Model.Models
         public Company? Company { get; set; }
 
         public ICollection<Document> Documnents { get; set; } = new HashSet<Document>();
-
+        public ICollection<WorkItem> WorkItems { get; set; } = new HashSet<WorkItem>();
     }
 }

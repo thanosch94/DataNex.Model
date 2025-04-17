@@ -17,10 +17,13 @@ namespace DataNex.Model.Models
         [StringLength(50)]
         public string Name { get; set; }
 
-        public WorkItemTypeEnum Type { get; set; } //It refers to the entity (Task, Project)
+        public WorkItemCategoryEnum Category { get; set; } //It refers to the entity (Task, Project)
         public Guid? CompanyId { get; set; }
 
         public Company? Company { get; set; }
+        public ICollection<WorkItem> WorkItems { get; set; } = new HashSet<WorkItem>();
+
+        
 
     }
 }
