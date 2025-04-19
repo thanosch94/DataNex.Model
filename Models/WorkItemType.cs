@@ -17,7 +17,12 @@ namespace DataNex.Model.Models
         [StringLength(50)]
         public string Name { get; set; }
 
+        public string? Icon { get; set; }
+        public string? IconColor { get; set; }
+
         public WorkItemCategoryEnum Category { get; set; } //It refers to the entity (Task, Project)
+
+        public bool IsDefault { get; set; }
         public Guid? CompanyId { get; set; }
 
         public Company? Company { get; set; }

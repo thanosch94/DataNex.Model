@@ -22,7 +22,14 @@ namespace DataNex.Model.Models
         [StringLength(50)]
         public string Name { get; set; }
 
+        public string? Icon { get; set; }
+        public string? IconColor { get; set; }
+
+        public short? Order { get; set; }
+
         public StatusTypeEnum StatusType { get; set; }
+
+        public bool IsDefault { get; set; }
 
         public Guid? CompanyId { get; set; }
 
