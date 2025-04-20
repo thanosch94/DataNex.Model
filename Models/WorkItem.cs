@@ -24,6 +24,7 @@ namespace DataNex.Model.Models
         public User? Assignee { get; set; }
         public Guid? WorkItemTypeId { get; set; }
         public WorkItemType? WorkItemType { get; set; }
+        public WorkItemPriorityEnum WorkItemPriority { get; set; }
         public WorkItemCategoryEnum WorkItemCategory { get; set; }
         public Guid? SprintId { get; set; }
 

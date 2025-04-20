@@ -19,6 +19,7 @@ namespace DataNex.Model.Dtos
         public bool IsDefault { get; set; }
 
         public WorkItemCategoryEnum Category { get; set; } //It refers to the entity (Task, Project)
+
         public Guid? CompanyId { get; set; }
     }
 }

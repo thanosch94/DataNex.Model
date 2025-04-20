@@ -16,6 +16,8 @@ namespace DataNex.Model.Dtos
         public Guid? WorkItemTypeId { get; set; }
 
         public WorkItemCategoryEnum WorkItemCategory {  get; set; }
+        public WorkItemPriorityEnum WorkItemPriority { get; set; }
+
         public Guid? SprintId { get; set; }
 
         public DateTime? DueDate { get; set; }
