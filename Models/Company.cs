@@ -59,6 +59,7 @@ namespace DataNex.Model.Models
         public ICollection<WorkItemType> WorkItemTypes { get; set; } = new HashSet<WorkItemType>();
 
         public ICollection<WorkItem> WorkItems { get; set; } = new HashSet<WorkItem>();
+        public ICollection<AppPermission> AppPermissions { get; set; } = new HashSet<AppPermission>();
 
     }
 }
