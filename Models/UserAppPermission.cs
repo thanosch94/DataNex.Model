@@ -1,33 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataNex.Model.Models
 {
-    [Table("datanex_warehouses")]
-    public class WareHouse:BaseModel
+
+    [Table("datanex_user_permissions")]
+    public class UserAppPermission : BaseModel
     {
-        public WareHouse()
+        public UserAppPermission()
         {
             Id = Guid.NewGuid();
         }
 
         public Guid Id { get; set; }
 
-        [StringLength(50)]
-        public string Name { get; set; }
+        public Guid? AppPermissionId { get; set; }   
+        public AppPermission? AppPermission { get; set; }
+        
+        public Guid? UserId { get; set; }
 
-        public bool IsDefault { get; set; }
+        public User? User { get; set; }
 
         public Guid? CompanyId { get; set; }
 
         public Company? Company { get; set; }
-
-        public ICollection<Document> Documents { get; set; } = new HashSet<Document>();
 
     }
 }

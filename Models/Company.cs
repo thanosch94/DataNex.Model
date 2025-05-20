@@ -60,6 +60,7 @@ namespace DataNex.Model.Models
 
         public ICollection<WorkItem> WorkItems { get; set; } = new HashSet<WorkItem>();
         public ICollection<AppPermission> AppPermissions { get; set; } = new HashSet<AppPermission>();
+        public ICollection<UserAppPermission> UserAppPermissions { get; set; } = new HashSet<UserAppPermission>();
 
     }
 }

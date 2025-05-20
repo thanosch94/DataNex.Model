@@ -42,6 +42,10 @@ namespace DataNex.Model.Models
 
         public Supplier? Supplier { get; set; }
 
+        public Guid? WarehouseId { get; set; }
+
+        public WareHouse? Warehouse { get; set; }
+
 
         [Precision(18, 2)]
         public decimal? DocumentTotal { get; set; }
