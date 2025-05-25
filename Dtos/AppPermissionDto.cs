@@ -15,5 +15,6 @@ namespace DataNex.Model.Dtos
 
         public Guid CompanyId { get; set; }
 
+        public List<UserAppPermissionDto> UserAppPermissions { get; set; }
     }
 }
