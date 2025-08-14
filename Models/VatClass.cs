@@ -30,6 +30,7 @@ namespace DataNex.Model.Models
         public short Rate { get; set; }
 
         public ICollection<Product> Products { get; set; } = new HashSet<Product>();
+        public ICollection<Customer> Customers { get; set; } = new HashSet<Customer>();
 
         public Guid? CompanyId { get; set; }
 

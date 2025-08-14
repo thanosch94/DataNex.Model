@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataNex.Model.Models
 {
     [Table("datanex_customers")]
-    public class Customer: Person
+    public class Customer : Person
     {
         public Customer()
         {
-            Id = Guid.NewGuid();    
+            Id = Guid.NewGuid();
         }
         public virtual Guid Id { get; set; }
-        public virtual Guid? CompanyId { get; set; }
+        public virtual Guid? VatClassId { get; set; }
+        public virtual VatClass? VatClass { get; set; }
+        public virtual Guid? CompanyId { get; set; } //Refers to the Id of the app user company
 
         public virtual Company? Company { get; set; }
 
