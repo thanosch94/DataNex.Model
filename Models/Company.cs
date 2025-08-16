@@ -63,6 +63,8 @@ namespace DataNex.Model.Models
         public ICollection<UserAppPermission> UserAppPermissions { get; set; } = new HashSet<UserAppPermission>();
         public ICollection<CntorDatasource> CntorDatasources { get; set; } = new HashSet<CntorDatasource>();
         public ICollection<CntorDatasourceEntity> CntorDatasourceEntities { get; set; } = new HashSet<CntorDatasourceEntity>();
+        public ICollection<Address> Addresses { get; set; } = new HashSet<Address>();
+        public ICollection<CustomerAddress> CustomerAddresses { get; set; } = new HashSet<CustomerAddress>();
 
     }
 }
