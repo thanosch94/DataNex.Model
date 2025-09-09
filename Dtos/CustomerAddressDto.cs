@@ -7,7 +7,10 @@ namespace DataNex.Model.Dtos
         public Guid Id { get; set; }
         public AddressTypeEnum AddressType { get; set; }
         public Guid AddressId { get; set; }
+        public AddressDto Address { get; set; }
         public Guid CustomerId { get; set; }
         public Guid CompanyId { get; set; }
+        public bool IsDefault { get; set; }
+        public string? Notes { get; set; }
     }
 }

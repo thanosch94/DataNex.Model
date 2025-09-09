@@ -55,5 +55,7 @@ namespace DataNex.Model.Dtos
         public DateTime? UserDate4 { get; set; }
         public Guid? CompanyId { get; set; }
 
+        public List<CustomerAddressDto> CustomerAddresses { get; set; }
+
     }
 }

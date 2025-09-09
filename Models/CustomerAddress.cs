@@ -16,6 +16,8 @@ namespace DataNex.Model.Models
         public Address Address { get; set; }
         public Guid CustomerId { get; set; }
         public Customer Customer { get; set; }
+        public bool IsDefault { get; set; }
+        public string? Notes { get; set; }
         public Guid CompanyId { get; set; }
         public Company Company { get; set; }
 
