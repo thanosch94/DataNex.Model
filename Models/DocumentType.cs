@@ -40,6 +40,7 @@ namespace DataNex.Model.Models
         public virtual Company? Company { get; set; }
 
         public ICollection<Document> Documents { get; set; } = new HashSet<Document>();
+        public ICollection<DocumentSeries> DocumentSeries { get; set; } = new HashSet<DocumentSeries>();
 
     }
 }

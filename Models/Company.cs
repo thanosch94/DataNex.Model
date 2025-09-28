@@ -65,6 +65,7 @@ namespace DataNex.Model.Models
         public ICollection<CntorDatasourceEntity> CntorDatasourceEntities { get; set; } = new HashSet<CntorDatasourceEntity>();
         public ICollection<Address> Addresses { get; set; } = new HashSet<Address>();
         public ICollection<CustomerAddress> CustomerAddresses { get; set; } = new HashSet<CustomerAddress>();
+        public ICollection<DocumentSeries> DocumentSeries { get; set; } = new HashSet<DocumentSeries>();
 
     }
 }
