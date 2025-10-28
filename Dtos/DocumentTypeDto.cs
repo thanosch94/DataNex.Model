@@ -1,5 +1,7 @@
 ﻿using DataNex.Model.Enums;
+using DataNex.Model.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,5 +31,8 @@ namespace DataNex.Model.Dtos
         public DocTypeAffectBehaviorEnum PersonBalanceAffectBehavior { get; set; }
 
         public DocTypeAffectBehaviorEnum WareHouseAffectBehavior { get; set; }
+
+        public List<DocumentSeriesDto> DocumentSeries { get; set; } 
+        
     }
 }

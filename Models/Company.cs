@@ -66,6 +66,9 @@ namespace DataNex.Model.Models
         public ICollection<Address> Addresses { get; set; } = new HashSet<Address>();
         public ICollection<CustomerAddress> CustomerAddresses { get; set; } = new HashSet<CustomerAddress>();
         public ICollection<DocumentSeries> DocumentSeries { get; set; } = new HashSet<DocumentSeries>();
+        public ICollection<DocTypeTransformation> DocTypeTransformations { get; set; } = new HashSet<DocTypeTransformation>();
+        public ICollection<PaymentMethod> PaymentMethods { get; set; } = new HashSet<PaymentMethod>();
+        public ICollection<ShippingMethod> ShippingMethods { get; set; } = new HashSet<ShippingMethod>();
 
     }
 }

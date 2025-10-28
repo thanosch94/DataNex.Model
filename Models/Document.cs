@@ -22,8 +22,9 @@ namespace DataNex.Model.Models
         public DateTimeOffset DocumentDateTime { get; set; }
 
         public Guid DocumentTypeId { get; set; }
-
         public DocumentType DocumentType { get; set; }
+        public Guid DocumentSeriesId { get; set; }
+        public DocumentSeries DocumentSeries { get; set; }
 
         public int DocumentNumber { get; set; }
 
@@ -90,6 +91,13 @@ namespace DataNex.Model.Models
         public Guid VatClassId { get; set; }
 
         public VatClass VatClass { get; set; }
+
+        public Guid? PaymentMethodId { get; set; }
+        public PaymentMethod? PaymentMethod { get; set; }
+        public Guid? ShippingMethodId { get; set; }
+        public ShippingMethod? ShippingMethod { get; set; }
+
+
 
     }
 }

@@ -1,10 +1,4 @@
 ﻿using DataNex.Model.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataNex.Model.Dtos
 {
@@ -18,6 +12,7 @@ namespace DataNex.Model.Dtos
         public DateTimeOffset DocumentDateTime { get; set; }
 
         public Guid DocumentTypeId { get; set; }
+        public Guid DocumentSeriesId { get; set; }
         public string DocumentTypeName { get; set; }
 
         public int DocumentNumber { get; set; }
@@ -68,5 +63,8 @@ namespace DataNex.Model.Dtos
         public DateTime? UserDate4 { get; set; }
         public string DocumentCode { get; set; }
         public Guid VatClassId { get; set; }
+        public Guid? PaymentMethodId { get; set; }
+        public Guid? ShippingMethodId { get; set; }
+
     }
 }

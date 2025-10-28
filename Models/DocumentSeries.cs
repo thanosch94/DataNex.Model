@@ -38,5 +38,6 @@ namespace DataNex.Model.Models
         public Guid DocumentTypeId { get; set; }
         public DocumentType DocumentType { get; set; }
 
+        public ICollection<Document> Documents { get; set; } = new HashSet<Document>();
     }
 }
