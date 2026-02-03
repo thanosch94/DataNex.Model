@@ -1,21 +1,16 @@
 ﻿using DataNex.Model.Enums;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataNex.Model.Models
 {
     [Table("datanex_documenttypes")]
-    public class DocumentType:BaseModel
+    public class DocumentType : BaseModel
     {
 
         public DocumentType()
         {
-            Id= Guid.NewGuid();
+            Id = Guid.NewGuid();
         }
 
         public Guid Id { get; set; }
@@ -34,10 +29,12 @@ namespace DataNex.Model.Models
         public DocTypeAffectBehaviorEnum PersonBalanceAffectBehavior { get; set; }
 
         public DocTypeAffectBehaviorEnum WareHouseAffectBehavior { get; set; }
+        public PriceTypesEnum UsesPrices { get; set; }
+        public bool AutoIncrementCodeEnabled { get; set; }
+        public Guid? CancellationDocTypeId { get; set; }
+        public Guid? CompanyId { get; set; }
 
-        public virtual Guid? CompanyId { get; set; }
-
-        public virtual Company? Company { get; set; }
+        public Company? Company { get; set; }
 
         public ICollection<Document> Documents { get; set; } = new HashSet<Document>();
         public ICollection<DocumentSeries> DocumentSeries { get; set; } = new HashSet<DocumentSeries>();

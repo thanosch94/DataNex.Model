@@ -21,6 +21,8 @@ namespace DataNex.Model.Dtos
 
         public int Quantity { get; set; }
 
+        public decimal DiscountPercentage { get; set; }
+
         public Guid? ProductSizeId { get; set; }
 
         //public ProductSize? ProductSize { get; set; }
@@ -32,6 +34,7 @@ namespace DataNex.Model.Dtos
         public string SizeName { get; set; }
         public string Barcode { get; set; }
         public decimal ProductRetailPrice { get; set; }
+        public decimal TotalDiscount { get; set; }
         public decimal TotalPrice { get; set; }
         public bool IsRowFilled { get; set; }
         public string DocumentCode { get; set; }

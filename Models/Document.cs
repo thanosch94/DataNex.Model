@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DataNex.Model.Enums;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace DataNex.Model.Models
 {
     [Table("datanex_documents")]
-    public class Document:BaseModel
+    public class Document : BaseModel
     {
         public Document()
         {
@@ -37,8 +33,8 @@ namespace DataNex.Model.Models
 
         public Guid? CustomerId { get; set; }
 
-        public Customer? Customer { get; set; }     
-        
+        public Customer? Customer { get; set; }
+
         public Guid? SupplierId { get; set; }
 
         public Supplier? Supplier { get; set; }
@@ -97,7 +93,39 @@ namespace DataNex.Model.Models
         public Guid? ShippingMethodId { get; set; }
         public ShippingMethod? ShippingMethod { get; set; }
 
+        public TransformationStatusEnum TransfromationStatus { get; set; }
+
+        public string? SourceDocIds { get; set; }
+
+        public string? TargetDocIds { get; set; }
 
 
+        [NotMapped]
+        public List<Guid>? SourceDocIdsList
+        {
+            get => string.IsNullOrEmpty(SourceDocIds)
+                ? new List<Guid>()
+                : SourceDocIds.Split(',')
+                    .Select(x => Guid.Parse(x))
+                    .ToList();
+
+            set => SourceDocIds = value == null || !value.Any()
+                ? null
+                : string.Join(",", value);
+        }
+
+        [NotMapped]
+        public List<Guid>? TargetDocIdsList
+        {
+            get => string.IsNullOrEmpty(TargetDocIds)
+                ? new List<Guid>()
+                : TargetDocIds.Split(',')
+                    .Select(x => Guid.Parse(x))
+                    .ToList();
+
+            set => TargetDocIds = value == null || !value.Any()
+                ? null
+                : string.Join(",", value);
+        }
     }
 }

@@ -1,10 +1,11 @@
-﻿using DataNex.Model.Models;
+﻿using DataNex.Model.Enums;
+using DataNex.Model.Models;
 
 namespace DataNex.Model.Dtos
 {
     public class DocumentDto
     {
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
         public int? SerialNumber { get; set; }
 
         public string? Code { get; set; }
@@ -65,6 +66,10 @@ namespace DataNex.Model.Dtos
         public Guid VatClassId { get; set; }
         public Guid? PaymentMethodId { get; set; }
         public Guid? ShippingMethodId { get; set; }
+        public List<Guid>? SourceDocIdsList { get; set; }
+        public List<Guid>? TargetDocIdsList { get; set; }
+        public TransformationStatusEnum TransfromationStatus { get; set; }
+        public ICollection<DocumentProductDto> DocumentProducts { get; set; }
 
     }
 }

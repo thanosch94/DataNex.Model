@@ -31,7 +31,9 @@ namespace DataNex.Model.Dtos
         public DocTypeAffectBehaviorEnum PersonBalanceAffectBehavior { get; set; }
 
         public DocTypeAffectBehaviorEnum WareHouseAffectBehavior { get; set; }
-
+        public PriceTypesEnum UsesPrices { get; set; }
+        public bool AutoIncrementCodeEnabled { get; set; }
+        public Guid? CancellationDocTypeId { get; set; }
         public List<DocumentSeriesDto> DocumentSeries { get; set; } 
         
     }

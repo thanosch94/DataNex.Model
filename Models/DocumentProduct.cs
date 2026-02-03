@@ -36,7 +36,13 @@ namespace DataNex.Model.Models
         public int Quantity { get; set;}
 
         [Precision(18, 2)]
+        public decimal DiscountPercentage { get; set; }
+
+        [Precision(18, 2)]
         public decimal TotalVatAmount { get; set; }
+
+        [Precision(18, 2)]
+        public decimal TotalDiscount { get; set; }
 
         [Precision(18, 2)]
         public decimal TotalPrice { get; set; }
